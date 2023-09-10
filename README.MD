@@ -77,7 +77,7 @@ The goMail REST API provides the following endpoints:
 Here's an example of how to send an SMS via email using the API:
 
 ```bash
-curl -X POST http://localhost:8080/api/v1/send -H "Content-Type: application/json" -d '{
+curl -X POST http://localhost:3333/api/v1/send -H "Content-Type: application/json" -d '{
     "firstname": "John",
     "lastname": "Doe",
     "email": "johndoe@example.com",
