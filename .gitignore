@@ -17,7 +17,7 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 /.vscode
-logs/
+/logs
 /configs
 
 # Go workspace file
