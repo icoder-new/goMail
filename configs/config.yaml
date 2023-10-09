@@ -1,0 +1,13 @@
+port: 3333
+
+db:
+  host: "127.0.0.1"
+  username: "postgres"
+  dbname: "dbname"
+  sslmode: "disable"
+  port: "5432"
+
+smtp:
+  host: "smtp.host.com"
+  port: "port"
+  username: "your_account@host.com"
