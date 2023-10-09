@@ -18,6 +18,7 @@
 # vendor/
 /.vscode
 logs/
+/configs
 
 # Go workspace file
 go.work
