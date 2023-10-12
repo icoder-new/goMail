@@ -44,8 +44,8 @@ func ReadSettings() {
 	AppSettings.PostgresParams.Database = viper.GetString("db.dbname")
 	AppSettings.PostgresParams.SSLMode = viper.GetString("db.sslmode")
 
-	AppSettings.STMPParams.Server = viper.GetString("smtp.host")
-	AppSettings.STMPParams.Port = viper.GetString("smtp.port")
-	AppSettings.STMPParams.Username = viper.GetString("smtp.username")
-	AppSettings.STMPParams.Password = os.Getenv("SMTP_PASSWORD")
+	AppSettings.SMTPParams.Server = viper.GetString("smtp.host")
+	AppSettings.SMTPParams.Port = viper.GetString("smtp.port")
+	AppSettings.SMTPParams.Username = viper.GetString("smtp.username")
+	AppSettings.SMTPParams.Password = os.Getenv("SMTP_PASSWORD")
 }

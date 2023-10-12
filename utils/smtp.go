@@ -1,20 +1,24 @@
 package utils
 
-import "net/smtp"
+import (
+	"net/smtp"
+)
 
 func SendMessage(email, firstname, subject, message string) error {
 
-	msg := "From: " + AppSettings.STMPParams.Username + "\n" +
+	msg := "From: " + AppSettings.SMTPParams.Username + "\n" +
 		"To: " + email + "\n" +
 		"Subject: " + subject + "\n\n" +
 		"Dear, " + firstname + "!\n\n" +
 		"We'll answer you as soon as possible!\n\n" +
 		"Here is your message:\n\n" +
-		message
+		message + "\n\n" +
+		"Here is currency realtime:\n\n"
+		// + "wtf to write?"
 
-	err := smtp.SendMail(AppSettings.STMPParams.Server+":"+AppSettings.STMPParams.Port,
-		smtp.PlainAuth("", AppSettings.STMPParams.Username, AppSettings.STMPParams.Password, AppSettings.STMPParams.Server),
-		AppSettings.STMPParams.Username, []string{email}, []byte(msg))
+	err := smtp.SendMail(AppSettings.SMTPParams.Server+":"+AppSettings.SMTPParams.Port,
+		smtp.PlainAuth("", AppSettings.SMTPParams.Username, AppSettings.SMTPParams.Password, AppSettings.SMTPParams.Server),
+		AppSettings.SMTPParams.Username, []string{email}, []byte(msg))
 
 	return err
 }

@@ -3,7 +3,7 @@ package models
 type Settings struct {
 	AppParams      Params
 	PostgresParams PostgresSettings
-	STMPParams     SMTPSettings
+	SMTPParams     SMTPSettings
 }
 
 type Params struct {
