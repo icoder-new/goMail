@@ -19,6 +19,7 @@
 /.vscode
 /logs
 /configs
+/internal
 
 # Go workspace file
 go.work
