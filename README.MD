@@ -49,6 +49,10 @@ Before you begin, ensure you have met the following requirements:
 
 2. Modify the SMTP, database, and other settings as per your requirements.
 
+## Internal folder
+Here is confidential information for accessing the web page that provides currency data.
+You have the option to customize the content and modify the SMTP message handler text before running project.
+
 ## Usage
 
 To start the goMail REST API server, run the following command:
